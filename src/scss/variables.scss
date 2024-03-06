@@ -1,0 +1,12 @@
+// Globals
+$body-font-family: "IBMsans", "Helvetica", serif;
+
+$grid-breakpoints: (
+    "xs": 0,
+    "sm": 340px,
+    "md": 540px,
+    "lg": 800px - 24px,
+    "xl": 1280px - 24px,
+);
+
+$bottom-nav-btn-min-width: 70px;

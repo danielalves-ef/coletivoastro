@@ -1,0 +1,20 @@
+{
+  "btn": {
+    "acoes": {
+      "deletar": "Deletar",
+      "editar": "Editar",
+      "info": "Info",
+      "pagar": "Pagar"
+    }
+  },
+  "idiomas": {
+    "en": "Ingles",
+    "es": "Espanhol",
+    "idioma": "Idioma",
+    "pt": "Português"
+  },
+  "login": {
+    "entrarCom": "Entrar com",
+    "sair": "Finalizar sessão"
+  }
+}

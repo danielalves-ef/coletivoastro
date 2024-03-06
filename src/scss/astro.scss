@@ -1,0 +1,82 @@
+@import "variables.scss";
+
+// @import '../assets/fonts/Yellowtail-Regular.ttf';
+
+@font-face {
+    font-family: "Yellowtail";
+    src: url("../assets/fonts/Yellowtail-Regular.ttf");
+}
+
+@font-face {
+    font-family: "IBMmono";
+    src: url("../assets/fonts/IBMPlexMono-Regular.ttf");
+}
+@font-face {
+    font-family: "IBMsans";
+    src: url("../assets/fonts/IBMPlexSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Rubik";
+    src: url("../assets/fonts/Rubik.ttf");
+}
+@font-face {
+    font-family: "Rubik italic";
+    src: url("../assets/fonts/Rubik-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Notoserif bold";
+    src: url("../assets/fonts/NotoSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Notoserif bolditalic";
+    src: url("../assets/fonts/NotoSerif-BoldItalic.ttf");
+}
+
+.v-btn {
+    text-transform: initial;
+}
+
+.notoserif {
+    font-family: "Notoserif bold";
+}
+
+.my-icon {
+    g {
+        fill: currentColor;
+    }
+    path {
+        fill: currentColor;
+    }
+}
+
+.my-stroke {
+    svg {
+        stroke: currentColor;
+        stroke-width: 15px;
+    }
+}
+
+.my-brightness {
+    // filter: brightness(1.5) contrast(70%);
+}
+
+.grid-pagadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    .check-pagadores {
+        // display: inline-flex;
+        // flex: 1;
+        justify-content: left;
+        .v-input--selection-controls__input {
+            margin-right: 0px !important;
+        }
+    }
+}
+
+.salgadones-bg {
+    background-color: #8f3d4b;
+    background-image: linear-gradient(30deg, #2b1d42, rgba(43, 29, 66, 0.5)) !important;
+}
