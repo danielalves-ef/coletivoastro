@@ -704,7 +704,6 @@ export default {
 
             })
         },
-
         deletarTarefa({ state }, id) {
             const listaId = state.lista.id;
             return new Promise((resolve, reject) => {
@@ -727,6 +726,9 @@ export default {
                 commit("UPDATE_CONTAS_PROGRAMADAS", contasProgramadas)
                 console.log(contasProgramadas)
             })
+        },
+        arquivarLista({ state }) {
+            firebase.firestore().collection(firebasePaths.appcontas).doc(state.lista.id).update({ archivada: true })
         }
     }
 };

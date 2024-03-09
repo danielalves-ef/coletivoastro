@@ -193,7 +193,16 @@
             <v-col cols="12" class="pt-0">
                 <astro-divider class="text-center"> Ações </astro-divider>
             </v-col>
-            <v-col v-if="false" cols="12">
+            <v-col v-if="true" cols="12">
+                <v-btn
+                    class="mb-2"
+                    color="primary darken-3"
+                    dark
+                    block
+                    @click="arquivarLista"
+                >
+                    Arquivar lista
+                </v-btn>
                 <v-btn color="danger darken-3" dark v-if="isCriador" block>
                     Deletar lista
                 </v-btn>
@@ -227,6 +236,9 @@ export default {
         },
         getContasProgramadas() {
             this.$store.dispatch("appcontas/lista/getContasProgramadas");
+        },
+        arquivarLista() {
+            this.$store.dispatch("appcontas/lista/arquivarLista", this.lista);
         },
         deletarTarefa(id) {
             this.$store

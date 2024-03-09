@@ -207,17 +207,17 @@ export default {
     },
     methods: {
         fecharItem() {
-            // const query = { ...this.$route.query };
-            // delete query.item;
-            // console.log({ query });
-            // const push = {
-            //     name: this.$route.name,
-            //     params: this.$route.params,
-            //     query: query,
-            // };
-            // console.log({ push });
-            // this.$router.push(push);
-            this.$router.push({ name: "contas-lista" });
+            const query = { ...this.$route.query };
+            delete query.item;
+            console.log({ query });
+            const push = {
+                name: this.$route.name,
+                params: this.$route.params,
+                query: query,
+            };
+            console.log({ push });
+            this.$router.push(push);
+            // this.$router.push({ name: "contas-lista" });
         },
         abrirEdit() {
             const push = {
